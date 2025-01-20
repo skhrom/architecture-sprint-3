@@ -1,5 +1,5 @@
 @startuml
-!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Component.puml
+!includeurl C4/C4_Context.puml
 
 Person(user, "User", "Пользователь системы Теплый дом")
 System(sensors, "Датчики", "Отправляют информацию о температуре")

@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - main
+      - sprint_3
   pull_request:
     branches:
       - main
+      - sprint_3
 
 jobs:
   generate-diagrams:

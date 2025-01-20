@@ -60,7 +60,18 @@
 Чтобы добавить ссылку в файл Readme.md, нужно использовать синтаксис Markdown. Это делают так:
 
 ```markdown
-[Текст ссылки](monolit_context_diagram.puml)
+@startuml
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Component.puml
+
+Person(user, "User", "Пользователь системы Теплый дом")
+System(sensors, "Датчики", "Отправляют информацию о температуре")
+System(warmHouse, "Тёплый дом", "Организует удалённое управление отоплением в доме")
+
+Rel(user, warmHouse, "Включить/Отключить отопление", "REST-запрос")
+BiRel(user, warmHouse, "Получить текущую температуру", "REST-запрос")
+Rel(sensors, warmHouse, "отправить информацию о температуре", "REST-запрос")
+
+@enduml
 ```
 
 Замените `Текст ссылки` текстом, который хотите использовать для ссылки. Вместо `URL` вставьте адрес, на который должна вести ссылка. Например:

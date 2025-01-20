@@ -59,7 +59,7 @@
 
 Чтобы добавить ссылку в файл Readme.md, нужно использовать синтаксис Markdown. Это делают так:
 
-[Текст ссылки](diagrams/monolit_context_diagram.puml)
+[Текст ссылки](https://drive.google.com/file/d/1N-GFTS415nDC_uwxhEm6PF7jlp6X02DF/view?usp=sharing)
 
 
 Замените `Текст ссылки` текстом, который хотите использовать для ссылки. Вместо `URL` вставьте адрес, на который должна вести ссылка. Например:

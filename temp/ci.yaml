@@ -1,6 +1,6 @@
 name: ci
 
-zon:
+on:
   push:
 
 jobs:
